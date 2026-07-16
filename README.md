@@ -40,6 +40,23 @@ rustc microgpt.rs -O -o microgpt.exe
 .\microgpt.exe
 ```
 
+### Last verified run (Windows PowerShell)
+
+Command executed:
+
+```powershell
+Get-Location; rustc .\microgpt.rs -o .\microgpt.exe; if ($LASTEXITCODE -eq 0) { .\microgpt.exe }
+```
+
+Output highlights:
+
+- Path: `C:\Users\tangjiubin\microgpt`
+- `num docs: 32033`
+- `vocab size: 27`
+- `num params: 4192`
+- `step 1000 / 1000 | loss 2.2011`
+- 20 sampled names generated, including `dalyana`, `jarala`, `salan`, `meelya`, and `nalon`
+
 Notes:
 
 - `input.txt` is expected in the repo root
